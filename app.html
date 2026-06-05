@@ -74,8 +74,8 @@ const CONFIG = {
         logistics: "Encontro no lobby do Hilton Beijing Wangfujing às 08:00. Transfer para JD.com no Yizhuang Economic and Technological Development Zone.",
         tags: ["Plataformas", "Ecossistemas", "Pequim", "Educação"],
         morning_summary: ["08:00 Encontro no lobby — Hilton Beijing Wangfujing", "09:30 Reunião executiva — JD.com, 20th Floor Building A, No. 18 Kechuang 11 St, Daxing District"],
-        afternoon_summary: ["11:30 Transfer para almoço", "14:00 Reunião executiva — Meituan, Hengjieweiye Building, No. 4 & 6 Wangjing East Road, Chaoyang", "15:30 Transfer para Tsinghua University, 30 Shuangqing Rd, Haidian"],
-        evening_summary: ["16:30 Sessão educacional — Tsinghua University (TBC)", "18:00 Retorno ao hotel", "Jantar livre"],
+        afternoon_summary: ["11:30 Transfer para almoço", "Delegação se divide para sessões paralelas à tarde:", "13:00–15:00 Sessão educacional — Tsinghua University, 30 Shuangqing Rd, Haidian District", "14:00–16:00 Reunião executiva — Meituan, Hengjiweiye Building, No. 4 & 6 Wangjing East Road, Chaoyang District"],
+        evening_summary: ["17:00 Retorno ao hotel", "Almoço livre · Jantar livre"],
         discussion_points: [
           {
             company: "JD.com",
@@ -120,7 +120,7 @@ const CONFIG = {
         logistics: "07:00 Encontro no lobby do Hilton Beijing Wangfujing. Trem-bala G39 de Pequim Sul (07:56) chega a Hangzhou (12:33). Delegação se divide para sessões paralelas à tarde.",
         tags: ["Robótica", "IA Física", "Hangzhou", "Educação", "Viagem"],
         morning_summary: ["07:00 Encontro no lobby — Hilton Beijing Wangfujing", "07:56 Trem-bala G39 — Pequim Sul para Hangzhou", "12:33 Chegada em Hangzhou — transfer para Four Seasons Hotel"],
-        afternoon_summary: ["14:00 Reunião executiva — Unitree Robotics (Grupo 1)", "15:00 Sessão educacional — Zhejiang University (Grupo 2)"],
+        afternoon_summary: ["14:00 Tour opcional pela Zhejiang University", "Delegação se divide para sessões da tarde:", "15:00 Sessão educacional — Zhejiang University", "16:00 Reunião executiva — Unitree Robotics"],
         evening_summary: ["18:00 Retorno ao hotel", "Almoço e jantar livre"],
         discussion_points: [
           {
@@ -149,25 +149,14 @@ const CONFIG = {
       {
         date: "2026-06-10",
         city: "Hangzhou",
-        title: "Dia 4: Alibaba e Ant Group",
+        title: "Dia 4: Ant Group e Alibaba",
         theme: "Construindo economias digitais",
-        logistics: "08:30 Encontro no lobby do Four Seasons Hangzhou. Transfer para Alibaba HQ, 699 Wangshang Rd, Binjiang District. Almoço no Ant Group.",
+        logistics: "08:30 Encontro no lobby do Four Seasons Hangzhou. Transfer para Ant Group, No. 569 Xixi Road. Almoço patrocinado pelo Ant Group; jantar patrocinado pela Alibaba Cloud.",
         tags: ["Plataformas", "Fintech", "Cloud", "IA", "Hangzhou"],
-        morning_summary: ["08:30 Encontro no lobby — Four Seasons Hotel Hangzhou", "09:30 Reunião executiva — Alibaba HQ, 699 Wangshang Rd, Binjiang District"],
-        afternoon_summary: ["12:30 Transfer para Ant Group, No. 569 Xixi Road, Hangzhou 310013", "14:00 Reunião executiva — Ant Group (inclui almoço)"],
-        evening_summary: ["17:00 Transfer para Alibaba Cloud", "17:30 Jantar executivo com Alibaba Cloud"],
+        morning_summary: ["08:30 Encontro no lobby — Four Seasons Hotel Hangzhou", "09:15 Reunião executiva — Ant Group, No. 569 Xixi Road, Hangzhou 310013", "12:00 Almoço com Ant Group"],
+        afternoon_summary: ["13:30 Transfer para Alibaba HQ, 699 Wangshang Rd, Binjiang District", "14:30 Reunião executiva — Alibaba Cloud"],
+        evening_summary: ["17:30 Jantar executivo com Alibaba Cloud"],
         discussion_points: [
-          {
-            company: "Alibaba",
-            label: "Ecossistema Digital Global",
-            focus: "Como ecossistemas de plataforma integram comércio, pagamentos, nuvem e IA para criar economias digitais completas em escala.",
-            topics: [
-              { title: "Estratégia de Ecossistemas e Modelos de Plataforma", justification: "A Alibaba é a referência global de como construir um ecossistema que conecta consumidores, lojistas, logística, finanças e nuvem em uma plataforma única com efeitos de rede." },
-              { title: "Cloud Computing e IA Empresarial — Alibaba Cloud", justification: "O Alibaba Cloud é o maior provedor de nuvem da Ásia — entender sua estratégia de IA empresarial é fundamental para decisões de infraestrutura tecnológica." },
-              { title: "Habilitação de PMEs em Escala Global", justification: "A Alibaba habilitou dezenas de milhões de pequenas empresas a venderem globalmente — modelo de como plataformas podem criar valor real e mensurável para PMEs." },
-              { title: "Efeitos de Rede e Escala de Inovação", justification: "O ecossistema da Alibaba demonstra como efeitos de rede criam vantagens competitivas sustentáveis e como a escala amplifica o valor de cada novo serviço adicionado." },
-            ],
-          },
           {
             company: "Ant Group",
             label: "Finanças Embutidas em Ecossistemas",
@@ -179,6 +168,17 @@ const CONFIG = {
               { title: "Economias de Plataforma para Habilitação de PMEs", justification: "O Ant Group criou um dos maiores ecossistemas de crédito para PMEs do mundo, explorando como dados de ecossistema geram modelos de risco superiores aos tradicionais." },
             ],
           },
+          {
+            company: "Alibaba",
+            label: "Ecossistema Digital Global",
+            focus: "Como ecossistemas de plataforma integram comércio, pagamentos, nuvem e IA para criar economias digitais completas em escala.",
+            topics: [
+              { title: "Estratégia de Ecossistemas e Modelos de Plataforma", justification: "A Alibaba é a referência global de como construir um ecossistema que conecta consumidores, lojistas, logística, finanças e nuvem em uma plataforma única com efeitos de rede." },
+              { title: "Cloud Computing e IA Empresarial — Alibaba Cloud", justification: "O Alibaba Cloud é o maior provedor de nuvem da Ásia — entender sua estratégia de IA empresarial é fundamental para decisões de infraestrutura tecnológica." },
+              { title: "Habilitação de PMEs em Escala Global", justification: "A Alibaba habilitou dezenas de milhões de pequenas empresas a venderem globalmente — modelo de como plataformas podem criar valor real e mensurável para PMEs." },
+              { title: "Efeitos de Rede e Escala de Inovação", justification: "O ecossistema da Alibaba demonstra como efeitos de rede criam vantagens competitivas sustentáveis e como a escala amplifica o valor de cada novo serviço adicionado." },
+            ],
+          },
         ],
       },
       {
@@ -186,9 +186,9 @@ const CONFIG = {
         city: "Shenzhen",
         title: "Dia 5: Voo Hangzhou→Shenzhen + Huawei Campus Dongguan",
         theme: "Construindo vantagem tecnológica de longo prazo",
-        logistics: "04:30 Saída do Four Seasons para Aeroporto de Hangzhou. Voo CA1727 às 07:30. Huawei aguarda delegação em Shenzhen para transfer ao Campus Dongguan.",
+        logistics: "04:30 Saída do Four Seasons para Aeroporto de Hangzhou. Voo CZ3366 às 08:00. Huawei aguarda delegação em Shenzhen para transfer ao Campus Dongguan.",
         tags: ["Infraestrutura", "Soberania Tecnológica", "Shenzhen", "IA", "Viagem"],
-        morning_summary: ["04:30 Saída do Four Seasons para Aeroporto de Hangzhou", "07:30 Voo CA1727 — Hangzhou (HGH) para Shenzhen (SZX)", "09:40 Chegada — transfer para Campus Dongguan da Huawei"],
+        morning_summary: ["04:30 Saída do Four Seasons para Aeroporto de Hangzhou", "08:00 Voo CZ3366 — Hangzhou (HGH) para Shenzhen (SZX)", "10:20 Chegada — transfer para Campus Dongguan da Huawei"],
         afternoon_summary: ["12:00 Reunião executiva e tour pelo Campus Dongguan — Huawei"],
         evening_summary: ["17:00 Jantar executivo com Huawei", "19:30 Retorno ao hotel em Shenzhen"],
         discussion_points: [
@@ -210,9 +210,9 @@ const CONFIG = {
         city: "Shenzhen",
         title: "Dia 6: Ping An/OneConnect, Accenture Hub e WeBank",
         theme: "Reinventando serviços financeiros",
-        logistics: "09:00 Encontro no lobby do JW Marriott Shenzhen. Transfer para Ping An Bank, 5033 Yitian Road, Futian District.",
+        logistics: "08:00 Encontro no lobby do JW Marriott Shenzhen. Transfer para Ping An Bank, 5033 Yitian Road, Futian District.",
         tags: ["Bancos", "IA", "Fintech", "Shenzhen"],
-        morning_summary: ["09:00 Encontro no lobby — JW Marriott Hotel Shenzhen", "10:00 Reunião executiva e tour pelo branch flagship — Ping An Bank & OneConnect, 5033 Yitian Road, Futian District"],
+        morning_summary: ["08:00 Encontro no lobby — JW Marriott Hotel Shenzhen", "09:00 Reunião executiva e tour pelo branch flagship — Ping An Bank & OneConnect, 5033 Yitian Road, Futian District"],
         afternoon_summary: ["12:00 Almoço executivo com OneConnect", "14:00 Transfer para Accenture Innovation Hub, Unit 3102-3103, Building 10B, Shenzhen Bay Eco-Technology Park", "14:30 Workshop de reflexão — Accenture Innovation Hub", "16:00 Transfer para WeBank, Qianhai Free Trade Zone"],
         evening_summary: ["16:30 Reunião executiva e jantar com WeBank", "20:00 Retorno ao JW Marriott"],
         discussion_points: [
@@ -268,11 +268,11 @@ const CONFIG = {
         city: "Singapura",
         title: "Dia 8: Voo Shenzhen→Singapura + Jantar com ByteDance",
         theme: "Da escala da China aos sistemas de Singapura",
-        logistics: "04:00 Saída do JW Marriott para Aeroporto de Shenzhen. Voo às 07:30 para Singapura. Check-in no Swissotel The Stamford às 14:00. Jantar executivo com ByteDance.",
+        logistics: "04:00 Saída do JW Marriott para Aeroporto de Shenzhen. Voo às 07:30 para Singapura. Check-in no Swissotel The Stamford às 14:00. Jantar executivo com ByteDance no Lavo (Marina Bay Sands).",
         tags: ["Singapura", "IA", "Plataformas", "Viagem"],
         morning_summary: ["04:00 Saída do JW Marriott para Aeroporto de Shenzhen", "07:30 Voo para Singapura (SIN)"],
         afternoon_summary: ["14:00 Check-in — Swissotel The Stamford. Tempo livre em Singapura."],
-        evening_summary: ["18:00 Jantar executivo com ByteDance"],
+        evening_summary: ["20:00 Encontro no lobby do Swissotel — táxi para o Lavo", "20:30 Jantar executivo com ByteDance @ Lavo, Level 57, Tower 1, Marina Bay Sands"],
         discussion_points: [
           {
             company: "ByteDance",
@@ -296,7 +296,7 @@ const CONFIG = {
         tags: ["Cloud", "Bancos", "Fintech", "Singapura"],
         morning_summary: ["09:30 Encontro no lobby — Swissotel The Stamford", "10:00 Reunião executiva — AWS, IOI Central Boulevard Tower 2, East Tower, Level 2", "12:00 Almoço livre"],
         afternoon_summary: ["13:00 Reunião executiva — DBS, 12 Marina Boulevard, Marina Bay Financial Centre Tower 3", "14:30 Reunião executiva — GFTN, Six Battery Road", "16:00 Reunião executiva — ByteDance, One Raffles Quay"],
-        evening_summary: ["18:30 Jantar executivo com AWS"],
+        evening_summary: ["18:30 Jantar executivo com AWS @ Lei Garden, 30 Victoria Street, #01-24 CHIJMES"],
         discussion_points: [
           {
             company: "AWS",
@@ -340,8 +340,8 @@ const CONFIG = {
         theme: "Desenhando a economia do futuro — competitividade nacional e reinvenção contínua",
         logistics: "09:30 Encontro no lobby do Swissotel. Transfer para UOB, UOB Plaza, 80 Raffles Place. Encerramento às 17:00.",
         tags: ["Bancos", "Governo", "Singapura", "Competitividade"],
-        morning_summary: ["09:30 Encontro no lobby — Swissotel The Stamford", "10:00 Reunião executiva — UOB, UOB Plaza, 80 Raffles Place", "12:30 Almoço — Accenture Innovation Hub"],
-        afternoon_summary: ["13:00 Transfer para Accenture Innovation Hub — sessão com Enterprise Singapore", "15:00 Transfer para MTI, The Treasury, 100 High St", "15:30 Reunião executiva — MTI Singapore"],
+        morning_summary: ["09:30 Encontro no lobby — Swissotel The Stamford", "10:00 Reunião executiva — UOB, UOB Plaza, 80 Raffles Place"],
+        afternoon_summary: ["12:00 Transfer para Accenture Innovation Hub — sessão com Accenture & Enterprise Singapore (almoço Accenture)", "15:00 Transfer para MTI, The Treasury, 100 High St", "15:30 Reunião executiva — MTI Singapore"],
         evening_summary: ["17:00 Encerramento da tour", "Jantar livre"],
         discussion_points: [
           {
@@ -384,9 +384,9 @@ const CONFIG = {
         date: "2026-06-11",
         from: "HGH",
         to: "SZX",
-        carrier: "Air China",
-        flight: "CA 1727",
-        time: "07:30",
+        carrier: "China Southern",
+        flight: "CZ 3366",
+        time: "08:00",
       },
       {
         date: "2026-06-14",
